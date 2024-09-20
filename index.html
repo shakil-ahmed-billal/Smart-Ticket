@@ -184,28 +184,44 @@
             <h1>Total Price:</h1>
             <h1 id="total-price" >BDT <span>***</span></h1>
           </div>
-          <div class="flex justify-between border-2 rounded-lg my-2">
-            <input class="input w-full" type="text" placeholder="Have a coupon ?">
-            <button class="btn bg-green-600 text-white">Apply</button>
+          <div id="coupon-part" class="flex justify-between border-2 rounded-lg my-2 " >
+            <input id="input-coupon" class="input w-full " type="text" placeholder="Have a coupon ?" disabled >
+            <button id="coupon-btn" class="btn bg-green-600 text-white" disabled >Apply</button>
+          </div>
+          <div class="flex justify-between">
+            <h1> Discount Price:</h1>
+            <h1>BDT <span id="discount-price">***</span></h1>
           </div>
           <div class="flex justify-between">
             <h1>Grand Price:</h1>
-            <h1>BDT <span>***</span></h1>
+            <h1>BDT <span id="grand-price">***</span></h1>
           </div>
           <div class="border-dashed border-2 my-3"></div>
-          <form action="" disabled>
+          <div>
             <h1 class="text-lg font-bold mt-5">Passenger Name</h1>
             <input class="input w-full border-red-50 rounded-lg my-2" type="text" placeholder="Enter Your Name">
-            <h1 class="text-lg font-bold mt-5">Phone Number</h1>
-            <input class="input w-full border-red-50 rounded-lg my-2" type="number" placeholder="Enter Your Phone Number">
+            <h1 class="text-lg font-bold mt-5" >Phone Number</h1>
+            <input id="phone-input" class="input w-full border-red-50 rounded-lg my-2" type="number" placeholder="Enter Your Phone Number">
             <h1 class="text-lg font-bold mt-5">Email ID</h1>
             <input class="input w-full border-red-50 rounded-lg my-2" type="email" placeholder="Enter Your Email ID">
-            <button class="btn bg-green-700 text-white w-full mt-5">Next</button>
-            <div class="flex justify-between">
-              <a href="">Terms and Conditions</a>
-              <a href="">Cancellation Policy</a>
+            <button id="next-btn" class="btn bg-green-700 text-white w-full mt-5" onclick="my_modal_1.showModal()" disabled>Next</button >
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold">Hello!</h3>
+                  <p class="py-4">Press ESC key or click the button below to close</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button id="close" class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            <div class="flex justify-between mt-5" >
+              <a class="border-b-2" href="">Terms and Conditions</a>
+              <a class="border-b-2" href="">Cancellation Policy</a>
             </div>
-          </form>
+          </div>
         </div>
        </section>
       <!-- ticket section -->
