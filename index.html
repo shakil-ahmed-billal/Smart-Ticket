@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Ticketing</title>
+    <!-- script CDN add -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- script CDN add -->
+    <!-- icon cdn -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-462758aa1e172f82d39e1ea35e919e0a.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+    <!-- icon cdn -->
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="w-10/12 mx-auto py-20 text-center">
+        <h1>P.H Paribahan</h1>
+        <p class="text-center">
+          Yes, you can run unit tests and view the results directly within <br> the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+        <div class="grid grid-cols-4 mt-10">
+          <div class="flex justify-between col-span-3 ">
+            <div class="flex">
+              <div class="">
+                <img src="./image/bus-logo.png" alt="" />
+              </div>
+              <div class=" text-start ml-5">
+                <h1>Greenline Paribahan</h1>
+                <p>Coach-009-WEB ! AC_Business</p>
+              </div>
+            </div>
+            <div class="btn">
+              <i class="fa-solid fa-loveseat"></i><span id="seat-left">40</span>Seats left
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ticket section -->
+       <section class="w-10/12 mx-auto grid grid-cols-3 mb-30">
+        <div class="col-span-2">
+            <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+            <div class="border-dashed border-2 my-3"></div>
+            <div class="w-full flex justify-between">
+                <button><i class="fa-solid fa-loveseat"></i> Available</button>
+                <h1 class="text-green-500 mr-16"><i class="fa-solid fa-loveseat"></i> Selected</h1>
+            </div>
+            <div class="border-dashed border-2 my-3"></div>
+            <div class="flex justify-end mr-16">
+                <button class="btn px-10 my-5"><i class="fa-sharp fa-solid fa-dharmachakra"></i></button>
+            </div>
+            <!-- seat button  -->
+            <div class="grid grid-cols-12 gap-10">
+                <!-- row-1 -->
+                 <p class="bg-green-200 rounded-full w-10 h-10 text-center text-black col-span-2">A</p>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">A1</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">A2</button>
+                 <div class=""></div>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">A3</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">A4</button>
+                <!-- row-2 -->
+                 <p class="bg-green-200 rounded-full w-10 h-10 text-center text-black col-span-2">B</p>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">B1</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">B2</button>
+                 <div class=""></div>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">B3</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">B4</button>
+                <!-- row-3 -->
+                 <p class="bg-green-200 rounded-full w-10 h-10 text-center text-black col-span-2">C</p>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">C1</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">C2</button>
+                 <div class=""></div>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">C3</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">C4</button>
+                <!-- row-4 -->
+                 <p class="bg-green-200 rounded-full w-10 h-10 text-center text-black col-span-2">D</p>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">D1</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">D2</button>
+                 <div class=""></div>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">D3</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">D4</button>
+                <!-- row-5 -->
+                 <p class="bg-green-200 rounded-full w-10 h-10 text-center text-black col-span-2">E</p>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">E1</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">E2</button>
+                 <div class=""></div>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">E3</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">E4</button>
+                <!-- row-6 -->
+                 <p class="bg-green-200 rounded-full w-10 h-10 text-center text-black col-span-2">F</p>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">F1</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">F2</button>
+                 <div class=""></div>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">F3</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">F4</button>
+                <!-- row-7 -->
+                 <p class="bg-green-200 rounded-full w-10 h-10 text-center text-black col-span-2">G</p>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">G1</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">G2</button>
+                 <div class=""></div>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">G3</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">G4</button>
+                <!-- row-8 -->
+                 <p class="bg-green-200 rounded-full w-10 h-10 text-center text-black col-span-2">H</p>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">H1</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">H2</button>
+                 <div class=""></div>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">H3</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">H4</button>
+                <!-- row-9 -->
+                 <p class="bg-green-200 rounded-full w-10 h-10 text-center text-black col-span-2">I</p>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">I1</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">I2</button>
+                 <div class=""></div>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">I3</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">I4</button>
+                <!-- row-10 -->
+                 <p class="bg-green-200 rounded-full w-10 h-10 text-center text-black col-span-2">J</p>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">J1</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">J2</button>
+                 <div class=""></div>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">J3</button>
+                 <button onclick="handleSelectSeat(this)" class="btn col-span-2">J4</button>
+
+            </div>
+        </div>
+        <!-- user information -->
+        <div class="ml-5">
+          <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+          <div class="border-dashed border-2 my-3"></div>
+          <table id="select-seat" class="w-full ">
+            <tr class="border-2">
+              <th>Seat <span id="seat-count" class=" rounded-full bg-green-400 text-black">0</span></th>
+              <th>Class</th>
+              <th>Price</th>
+            </tr>
+            <tr class="bg-green-400 text-black">
+              
+            </tr>
+          </table>
+          <h1 id="no-seat-book" class="text-red-500 text-center text-2xl my-5">No Seat Book</h1>
+          <div class="flex justify-between">
+            <h1>Total Price:</h1>
+            <h1 id="total-price" >BDT <span>***</span></h1>
+          </div>
+          <div class="flex justify-between border-2 rounded-lg my-2">
+            <input class="input w-full" type="text" placeholder="Have a coupon ?">
+            <button class="btn bg-green-600 text-white">Apply</button>
+          </div>
+          <div class="flex justify-between">
+            <h1>Grand Price:</h1>
+            <h1>BDT <span>***</span></h1>
+          </div>
+          <div class="border-dashed border-2 my-3"></div>
+          <form action="" disabled>
+            <h1 class="text-lg font-bold mt-5">Passenger Name</h1>
+            <input class="input w-full border-red-50 rounded-lg my-2" type="text" placeholder="Enter Your Name">
+            <h1 class="text-lg font-bold mt-5">Phone Number</h1>
+            <input class="input w-full border-red-50 rounded-lg my-2" type="number" placeholder="Enter Your Phone Number">
+            <h1 class="text-lg font-bold mt-5">Email ID</h1>
+            <input class="input w-full border-red-50 rounded-lg my-2" type="email" placeholder="Enter Your Email ID">
+            <button class="btn bg-green-700 text-white w-full mt-5">Next</button>
+            <div class="flex justify-between">
+              <a href="">Terms and Conditions</a>
+              <a href="">Cancellation Policy</a>
+            </div>
+          </form>
+        </div>
+       </section>
+      <!-- ticket section -->
+    </main>
+    <footer></footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
