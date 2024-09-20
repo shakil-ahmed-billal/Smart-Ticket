@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,30 +52,172 @@
     <!-- icon cdn -->
   </head>
   <body>
-    <header></header>
+    <header>
+      <section class="">
+        <nav class="w-10/12 mx-auto py-4">
+          <div>
+            <div class="navbar bg-base-100 ">
+              <div class="navbar-start ">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <a href="">Name</a>
+                  </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">P-Ticket</a>
+              </div>
+              <div class="navbar-center hidden lg:flex gap-10">
+                <a class="menu menu-horizontal px-1">Home</a>
+                <a class="menu menu-horizontal px-1">About</a>
+                <a class="menu menu-horizontal px-1">Destination</a>
+                <a class="menu menu-horizontal px-1">Search</a>
+              </div>
+              <div class="navbar-end">
+                <label class="flex cursor-pointer gap-2 mr-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5" />
+                    <path
+                      d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+                  </svg>
+                  <input type="checkbox" value="light" class="toggle theme-controller" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                  </svg>
+                </label>
+                <a class="btn bg-green-200 px-8 text-green-500 text-lg font-semibold">Bus<i class="fa-solid fa-bus"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
     <main>
-      <section class="w-10/12 mx-auto py-20 text-center">
-        <h1>P.H Paribahan</h1>
-        <p class="text-center">
+      <!-- coupon section -->
+       <section class="mt-16 mb-10">
+        <div class="w-10/12 mx-auto text-center">
+          <h1 class="text-4xl font-bold">Best offers for you</h1>
+          <div class="grid grid-cols-2 gap-5 my-14">
+            <!-- card 1 -->
+            <div class="bg-yellow-500 rounded-3xl">
+              <div class="flex justify-between col-span-1 ">
+                <div class="flex flex-col justify-center text-center items-center ml-20">
+                  <p class="text-6xl font-extrabold text-black">15% OFF</p>
+                <p class="text-lg text-gray-700 font-semibold">on your next purchase <br> use by January 2024</p>
+                </div>
+                <img src="./image/cupon-devider.png" alt="">
+                <div class="flex flex-col justify-center mr-14">
+                  <p class="text-4xl font-extrabold text-black">NEW15</p>
+                  <p class="text-lg text-gray-700 font-semibold">Coupon Code</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="bg-pink-400 rounded-3xl">
+              <div class="flex justify-between col-span-1 ">
+                <div class="flex flex-col justify-center text-center items-center ml-20">
+                  <p class="text-6xl font-extrabold text-black">20% OFF</p>
+                <p class="text-lg text-gray-700 font-semibold">on your next purchase <br> use by January 2024</p>
+                </div>
+                <img src="./image/cupon-devider.png" alt="">
+                <div class="flex flex-col justify-center mr-14">
+                  <p class="text-4xl font-extrabold text-black">Couple20</p>
+                  <p class="text-lg text-gray-700 font-semibold">Coupon Code</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <button class="btn text-lg px-10 bg-transparent border-green-500 border mb-16">See All Offer</button>
+          </div>
+        </div>
+       </section>
+      <!-- coupon section -->
+      <section class="w-10/12 mx-auto py-20 text-center border-t-2 border-green-500 rounded-3xl">
+        <h1 class="text-4xl font-bold">P.H Paribahan</h1>
+        <p class="text-center text-lg my-8 text-gray-400">
           Yes, you can run unit tests and view the results directly within <br> the
           app. The integrated testing features allow for a streamlined .
         </p>
-        <div class="grid grid-cols-4 mt-10">
-          <div class="flex justify-between col-span-3 ">
-            <div class="flex">
+        <!-- bus info ticket price -->
+        <div class="grid grid-cols-4 mt-10 border rounded-3xl shadow-2xl">
+          <div class="flex flex-col col-span-3 items-center mx-20 my-16">
+            <div class="flex justify-between w-full">
               <div class="">
-                <img src="./image/bus-logo.png" alt="" />
+                <div class="flex">
+                  <div class="">
+                    <img src="./image/bus-logo.png" alt="" />
+                  </div>
+                  <div class=" text-start ml-5">
+                    <h1>Greenline Paribahan</h1>
+                    <p>Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div> 
               </div>
-              <div class=" text-start ml-5">
-                <h1>Greenline Paribahan</h1>
-                <p>Coach-009-WEB ! AC_Business</p>
+              <div class="btn bg-green-200 text-green-500">
+                <i class="fa-solid fa-loveseat"></i><span id="seat-left">40</span>Seats left
               </div>
             </div>
-            <div class="btn">
-              <i class="fa-solid fa-loveseat"></i><span id="seat-left">40</span>Seats left
+            <div class="w-full mt-5">
+              <div class="flex justify-between my-6">
+                <p>Route</p>
+                <p>Dhaka - Sylhet</p>
+              </div>
+              <div class="border-dashed border"></div>
+              <div class="flex justify-between my-6">
+                <p>Route</p>
+                <p>Dhaka - Sylhet</p>
+              </div>
+              <div class="border-dashed border"></div>
+              <div class=" flex justify-between mt-6">
+                <button class="btn ">Est. Time - 11 Hour</button>
+                <button class="btn ">Dropping Point - Bogura</button>
+                <button class="btn ">Boarding Point - Laxmipur</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex">
+            <img class="" src="./image/info-devider.png" alt="">
+            <div class=" w-full flex flex-col justify-center items-center">
+              <img src="./image/fare.png" alt="">
+              <p class="text-4xl font-extrabold my-2">550 Taka</p>
+              <p class="text-xl font-bold">Per Seat</p>
             </div>
           </div>
         </div>
+        <!-- bus info ticket price -->
       </section>
       <!-- ticket section -->
        <section class="w-10/12 mx-auto grid grid-cols-3 mb-30">
@@ -169,7 +311,7 @@
         <div class="ml-5">
           <h1 class="text-2xl font-semibold">Select Your Seat</h1>
           <div class="border-dashed border-2 my-3"></div>
-          <table id="select-seat" class="w-full ">
+          <table id="select-seat" class="w-full text-center">
             <tr class="border-2">
               <th>Seat <span id="seat-count" class=" rounded-full bg-green-400 text-black">0</span></th>
               <th>Class</th>

@@ -35,8 +35,8 @@ function handleSelectSeat(event) {
         const updateValue = parseFloat(lastValue.innerText) - 1;
         lastValue.innerText = updateValue;
 
-        totalPrice.innerText = totalAmount;
-        grandPrice.innerText = totalAmount
+        totalPrice.innerText = totalAmount.toFixed(2);
+        grandPrice.innerText = totalAmount.toFixed(2)
         document.getElementById("no-seat-book").classList.add("hidden");
         const tr = document.createElement("tr");
         tr.className = "bg-green-400 text-black";
@@ -67,10 +67,19 @@ document.getElementById('coupon-btn').addEventListener('click',function(){
     }
     else if(inputValue ==='NEW15'){
         const discount = totalAmount * 0.15
-        discountPrice.innerText = discount ;
+        discountPrice.innerText = discount.toFixed(2) ;
 
         const newGrandPrice = totalAmount - discount ;
-        grandPrice.innerText = newGrandPrice;
+        grandPrice.innerText = newGrandPrice.toFixed(2);
+        document.getElementById('coupon-part').classList.add('hidden')
+        
+    }
+    else if(inputValue ==='Couple20'){
+        const discount = totalAmount * 0.20
+        discountPrice.innerText = discount.toFixed(2) ;
+
+        const newGrandPrice = totalAmount - discount ;
+        grandPrice.innerText = newGrandPrice.toFixed(2);
         document.getElementById('coupon-part').classList.add('hidden')
         
     }
